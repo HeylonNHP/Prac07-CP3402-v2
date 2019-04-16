@@ -8,6 +8,7 @@
 ?>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles.css" >
 </head>
 <body>
@@ -24,6 +25,8 @@ require "header.php";
         <li>Tinkering with electronics</li>
     </ul>
 </p>
+<h2>Me</h2>
+    <p><img src="me.jpg" height="250" alt="A picture of Heylon"></p>
 </div>
 <?php
 require "footer.php";
