@@ -80,5 +80,26 @@ foreach ($numbers as $number){
 
 <hr>
 
+<?php
+//Randomness test
+$chanceFactor = 1/1000;
+
+
+//Get range
+$minValue = 0;
+$maxValue = 1/$chanceFactor;
+$middleValue = $maxValue/2;
+
+$iterations = 0;
+while (rand($minValue,$maxValue) != $middleValue){
+    //Keep guessing
+    $iterations++;
+}
+
+$output = sprintf("For a 1 in %d chance of guessing the correct answer, it took %d iterations to obtain the correct guess",
+    $maxValue,$iterations);
+echo $output;
+?>
+
 </body>
 </html>
