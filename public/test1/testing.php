@@ -78,5 +78,7 @@ foreach ($numbers as $number){
 }
 ?>
 
+<hr>
+
 </body>
 </html>
