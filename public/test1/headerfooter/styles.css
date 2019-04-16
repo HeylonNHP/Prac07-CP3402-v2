@@ -1,0 +1,11 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background: #ff6363;
+    margin: 0px;
+    font-family: "Comic Sans MS";
+}
+#mainBody {
+    margin: 15px;
+}
