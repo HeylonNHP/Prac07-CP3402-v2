@@ -11,7 +11,9 @@ $variable1 = "<p>Here is some text that I'd like you to see!</p>";
 
 <html>
 <body>
+<h1>Prac07 - PHP</h1>
 
+<h2>For loop testing</h2>
 <?php
 //For loop test
     for($i = 0; $i < 5; ++$i){
@@ -21,6 +23,7 @@ $variable1 = "<p>Here is some text that I'd like you to see!</p>";
 
 <hr>
 
+<h2>Variable variable</h2>
 <?php
     //Interesting syntax test
     $string1 = "Hello";
@@ -36,6 +39,7 @@ $variable1 = "<p>Here is some text that I'd like you to see!</p>";
 
 <hr>
 
+<h2>If else statements</h2>
 <!--Addition test-->
 
 <form action="testing.php" method="get">
@@ -61,6 +65,8 @@ $variable1 = "<p>Here is some text that I'd like you to see!</p>";
 
 <hr>
 
+<h2>Function definition with parameters - and foreach loop</h2>
+
 <?php
 //Function definition
 
@@ -80,6 +86,8 @@ foreach ($numbers as $number){
 
 <hr>
 
+<h2>While loop</h2>
+
 <?php
 //Randomness test
 $chanceFactor = 1/1000;
@@ -96,10 +104,11 @@ while (rand($minValue,$maxValue) != $middleValue){
     $iterations++;
 }
 
-$output = sprintf("For a 1 in %d chance of guessing the correct answer, it took %d iterations to obtain the correct guess",
+$output = sprintf("For a <b>1</b> in <b>%d</b> chance of guessing the correct answer, it took <b>%d</b> iterations to obtain the correct guess",
     $maxValue,$iterations);
 echo $output;
 ?>
+
 
 </body>
 </html>
