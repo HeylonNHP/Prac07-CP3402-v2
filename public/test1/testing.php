@@ -109,6 +109,33 @@ $output = sprintf("For a <b>1</b> in <b>%d</b> chance of guessing the correct an
 echo $output;
 ?>
 
+<hr>
+
+<h2>String stuff</h2>
+
+<h3>Single vs Double quotes</h3>
+
+
+<?php
+$testString = "Hi.";
+
+echo '$testString - Good day';
+echo "<br>";
+echo "$testString - Good day";
+
+?>
+
+<h3>Heredoc</h3>
+
+<?php
+$heredoc = <<< EOS
+This is a string without using quotation marks.<br>
+I can use quotation marks in this string without having to escape them.<br>
+"This is pretty cool!" Heylon exclaimed.
+EOS;
+
+echo "<b>", $heredoc, "</b>";
+?>
 
 </body>
 </html>
